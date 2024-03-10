@@ -1,0 +1,3 @@
+Animes :
+  Beastars
+  SAO
