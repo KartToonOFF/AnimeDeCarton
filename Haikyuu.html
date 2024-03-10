@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Page</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+    <header>
+        <a href="#" class="logo"><i class="fas fa-infinity"></i>Anime.</a>
+        <nav class="navbar">
+            <a class="active" href="index.html">home</a>
+            <a href="#anime">anime</a>
+            <a href="#action">action</a>
+            <a href="#child">child</a>
+            <a href="#family">family</a>
+        </nav>
+        <div class="icons">
+            <i class="fas fa-bars" id="menu-bars"></i>
+            <i class="fas fa-search" id="search-icon"></i>
+            <a href="#" class="fas fa-heart"></a>
+        </div>
+    </header>
+
+    <div class="container-scrollbar">
+        <select class="btn" id="video-selector">
+            <option class="btn" value="Haikyuu/Episode 1.mp4">Episode 1</option>
+            <option class="btn" value="Haikyuu/Episode 2.mp4">Episode 2</option>
+            <option class="btn" value="Haikyuu/Episode 3.mp4">Episode 3</option>
+            <option class="btn" value="Haikyuu/Episode 4.mp4">Episode 4</option>
+            <option class="btn" value="Haikyuu/Episode 5.mp4">Episode 5</option>
+            <option class="btn" value="Haikyuu/Episode 6.mp4">Episode 6</option>
+            <option class="btn" value="Haikyuu/Episode 7.mp4">Episode 7</option>
+            <option class="btn" value="Haikyuu/Episode 8.mp4">Episode 8</option>
+            <option class="btn" value="Haikyuu/Episode 9.mp4">Episode 9</option>
+            <option class="btn" value="Haikyuu/Episode 10.mp4">Episode 10</option>
+            <!-- Add more video options as needed -->
+        </select>
+    </div>
+        
+    <div class="video-container container">
+        <video id="video" controls>
+            <!-- Default video source -->
+            <source src="vid/Haikyuu/Episode 1.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <script>
+        const videoSelector = document.getElementById('video-selector');
+        const video = document.getElementById('video');
+
+        videoSelector.addEventListener('change', () => {
+            const selectedVideo = videoSelector.value;
+            video.src = `vid/${selectedVideo}`;
+        });
+    </script>
+
+
+    <div class="copyright container">
+        <a href="#" class="logo"><i class="fas fa-infinity"></i>Anime.</a>
+        <p>&#169; Dailywebdesign. All rights reserved.</p>
+    </div>
