@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tokyo Revenger</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+    <header>
+        <a href="#" class="logo"><i class="fas fa-infinity"></i>Anime.</a>
+        <nav class="navbar">
+            <a class="active" href="index.html">home</a>
+            <a href="#anime">anime</a>
+        </nav>
+        <div class="icons">
+            <i class="fas fa-bars" id="menu-bars"></i>
+            <i class="fas fa-search" id="search-icon"></i>
+            <a href="#" class="fas fa-heart"></a>
+        </div>
+    </header>
+
+    <div class="container-scrollbar">
+        <select class="btn" id="video-selector">
+            <option class="btn" value="">Saison 1</option>
+            <option class="btn" value="https://video.sibnet.ru/shell.php?videoid=4702957&share=1">Episode 1</option>
+            <option class="btn" value="https://video.sibnet.ru/shell.php?videoid=4702958&share=1">Episode 2</option>
+            <option class="btn" value="https://video.sibnet.ru/shell.php?videoid=4702959&share=1">Episode 3</option>
+            <option class="btn" value="https://video.sibnet.ru/shell.php?videoid=4702960&share=1">Episode 4</option>
+            <option class="btn" value="https://video.sibnet.ru/shell.php?videoid=4702961&share=1">Episode 5</option>
+            <option class="btn" value="https://video.sibnet.ru/shell.php?videoid=4702962&share=1">Episode 6</option>
+            <option class="btn" value="https://video.sibnet.ru/shell.php?videoid=4702963&share=1">Episode 7</option>
+            <option class="btn" value="https://video.sibnet.ru/shell.php?videoid=4702964&share=1">Episode 8</option>
+            <option class="btn" value="https://video.sibnet.ru/shell.php?videoid=4702965&share=1">Episode 9</option>
+            <option class="btn" value="https://video.sibnet.ru/shell.php?videoid=4702966&share=1">Episode 10</option>
+            <option class="btn" value="https://video.sibnet.ru/shell.php?videoid=4702967&share=1">Episode 11</option>
+            <option class="btn" value="https://video.sibnet.ru/shell.php?videoid=4702968&share=1">Episode 12</option>
+            <option class="btn" value="https://video.sibnet.ru/shell.php?videoid=4702969&share=1">Episode 13</option>
+            <option class="btn" value="https://video.sibnet.ru/shell.php?videoid=4702971&share=1">Episode 14</option>
+            <option class="btn" value="https://video.sibnet.ru/shell.php?videoid=4702972&share=1">Episode 15</option>
+            <option class="btn" value="https://video.sibnet.ru/shell.php?videoid=4702973&share=1">Episode 16</option>
+            <option class="btn" value="https://video.sibnet.ru/shell.php?videoid=4702974&share=1">Episode 17</option>
+            <option class="btn" value="https://video.sibnet.ru/shell.php?videoid=4702976&share=1">Episode 18</option>
+            <option class="btn" value="https://video.sibnet.ru/shell.php?videoid=4702978&share=1">Episode 19</option>
+            <option class="btn" value="https://video.sibnet.ru/shell.php?videoid=4702980&share=1">Episode 20</option>
+            <option class="btn" value="https://video.sibnet.ru/shell.php?videoid=4702982&share=1">Episode 21</option>
+            <option class="btn" value="https://video.sibnet.ru/shell.php?videoid=4702983&share=1">Episode 22</option>
+            <option class="btn" value="https://video.sibnet.ru/shell.php?videoid=4702985&share=1">Episode 23</option>
+            <option class="btn" value="https://video.sibnet.ru/shell.php?videoid=4702988&share=1">Episode 24</option>
+            <option class="btn" value="">Saison 2</option>
+            <option class="btn" value="https://video.sibnet.ru/shell.php?videoid=5001607&share=1">Episode 1</option>
+            <option class="btn" value="https://video.sibnet.ru/shell.php?videoid=5129278&share=1">Episode 2</option>
+            <option class="btn" value="https://video.sibnet.ru/shell.php?videoid=5139733&share=1">Episode 3</option>
+            <option class="btn" value="https://video.sibnet.ru/shell.php?videoid=5148655&share=1">Episode 4</option>
+            <option class="btn" value="https://video.sibnet.ru/shell.php?videoid=5155200&share=1">Episode 5</option>
+            <option class="btn" value="https://video.sibnet.ru/shell.php?videoid=5162155&share=1">Episode 6</option>
+            <option class="btn" value="https://video.sibnet.ru/shell.php?videoid=5168755&share=1">Episode 7</option>
+            <option class="btn" value="https://video.sibnet.ru/shell.php?videoid=5175891&share=1">Episode 8</option>
+            <option class="btn" value="https://video.sibnet.ru/shell.php?videoid=5181163&share=1">Episode 9</option>
+            <option class="btn" value="https://video.sibnet.ru/shell.php?videoid=5186530&share=1">Episode 10</option>
+            <option class="btn" value="https://video.sibnet.ru/shell.php?videoid=5193486&share=1">Episode 11</option>
+            <option class="btn" value="https://video.sibnet.ru/shell.php?videoid=5193486&share=1">Episode 12</option>
+            <option class="btn" value="https://video.sibnet.ru/shell.php?videoid=5193486&share=1">Episode 13</option>
+
+            <!-- Add more video options as needed -->
+        </select>
+    </div>
+
+    <div class="center video-selector">
+        <iframe id="video" width="640" height="360" frameborder="0"
+            src="https://video.sibnet.ru/shell.php?videoid=4667143&share=1" allowfullscreen></iframe>
+    </div>
+
+    <script>
+        const videoSelector = document.getElementById('video-selector');
+        const video = document.getElementById('video');
+
+        videoSelector.addEventListener('change', () => {
+            const selectedVideo = videoSelector.value;
+            video.src = `${selectedVideo}`;
+        });
+    </script>
